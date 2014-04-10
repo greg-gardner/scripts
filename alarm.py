@@ -15,7 +15,8 @@ def main():
   hour = int(raw_input())
   print 'Minute:'
   minute = int(raw_input())
-  
+  print
+
   # Main Loop: watch time.
   while(True):
     currentTime = time.localtime()
