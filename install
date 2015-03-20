@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -r -p "Install alarm.py ? [y/N] " prompt
+if [[ $prompt == "y" || $prompt == "Y" ]]
+then
+	sudo ln -s $PWD/alarm.py /usr/bin/alarm
+fi
+
+read -r -p "Install pasteTimestamp.sh ? [y/N] " prompt
+if [[ $prompt == "y" || $prompt == "Y" ]]
+then
+	sudo ln -s $PWD/pasteTimestamp.sh /usr/bin/pastetimestamp
+fi
+
+read -r -p "Install notifyme ? [y/N] " prompt
+if [[ $prompt == "y" || $prompt == "Y" ]]
+then
+	sudo ln -s $PWD/notifyme.sh /usr/bin/notifyme
+fi
+
+#read -r -p "Install ... ? [y/N] " prompt
+#if [[$prompt == "y" || $prompt == "Y"]]
+#then
+#	...
+#fi
+
+
